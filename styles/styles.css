@@ -20,9 +20,19 @@
 
     --spacing-sm: 10px;
     --spacing-md: 1rem;
+    --spacing-lg: 20px;
 
     --image-main-width: 150px;
     --image-aside-width: 200px;
+}
+
+/* ================================
+   BODY (GLOBAL SPACING FIX)
+================================ */
+body {
+    padding: var(--spacing-lg);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
 }
 
 /* ================================
@@ -30,7 +40,7 @@
 ================================ */
 nav {
     background-color: var(--primary-color);
-    padding: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-md);
 }
 
 nav a {
@@ -89,15 +99,17 @@ aside h2 {
 ================================ */
 p {
     padding: 0;
+    margin-bottom: var(--spacing-sm);
 }
 
 /* ================================
    FOOTER
 ================================ */
 footer {
-    margin-top: 15px;
+    margin-top: var(--spacing-lg);
     border-top: 1px solid #000;
     text-align: center;
+    padding-top: var(--spacing-sm);
 }
 
 /* ================================
