@@ -1,32 +1,24 @@
-/* ================================
-   CSS VARIABLES
-================================ */
+/* ================================ CSS VARIABLES ================================ */
 :root {
     --primary-color: #0b3c49;
     --secondary-color: #1f7a8c;
     --accent1-color: #5fa8d3;
     --accent2-color: #f8fafc;
     --text-color: #1e293b;
-
     --heading-font: 'Segoe UI', sans-serif;
     --body-font: 'Roboto', sans-serif;
-
     --radius: 10px;
     --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
-/* ================================
-   RESET
-================================ */
+/* ================================ RESET ================================ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ================================
-   BODY
-================================ */
+/* ================================ BODY ================================ */
 body {
     font-family: var(--body-font);
     color: var(--text-color);
@@ -34,9 +26,7 @@ body {
     line-height: 1.6;
 }
 
-/* ================================
-   LAYOUT
-================================ */
+/* ================================ LAYOUT ================================ */
 header,
 main,
 footer {
@@ -45,9 +35,7 @@ footer {
     padding: 16px;
 }
 
-/* ================================
-   HEADER
-================================ */
+/* ================================ HEADER ================================ */
 .header {
     display: flex;
     justify-content: space-between;
@@ -60,9 +48,7 @@ footer {
     border-radius: 8px;
 }
 
-/* ================================
-   NAVIGATION (UL BASED)
-================================ */
+/* ================================ NAVIGATION (UL BASED) ================================ */
 nav ul {
     list-style: none;
     display: flex;
@@ -96,29 +82,22 @@ nav a:hover::after {
     width: 100%;
 }
 
-/* ================================
-   HEADINGS
-================================ */
+/* ================================ HEADINGS ================================ */
 h1,
 h2 {
     font-family: var(--heading-font);
     margin-bottom: 10px;
+    /* color: var(--primary-color); */
 }
 
-h2 {
-    color: var(--primary-color);
-}
-
-/* Adjusted h1 for accessibility */
 h1 {
-    color: rgb(0, 53, 84);
-    /* Dark navy, contrast ratio 4.8:1+ on accent1-color background */
+    color: rgb(14, 63, 90);
+    /* Dark navy blue, contrast ratio 4.5:1+ */
     background-color: rgb(95, 168, 211);
+
 }
 
-/* ================================
-   HERO SECTION
-================================ */
+/* ================================ HERO SECTION ================================ */
 .hero {
     position: relative;
     margin: 16px 0;
@@ -141,9 +120,8 @@ h1 {
     padding: 14px;
     text-align: center;
     background-color: var(--accent1-color);
-    color: rgb(0, 53, 84);
-    /* Updated for contrast */
-    opacity: 0.95;
+    color: #423030;
+    opacity: 0.9;
 }
 
 /* Hero Article */
@@ -152,7 +130,6 @@ h1 {
     bottom: 20px;
     left: 20px;
     right: 20px;
-
     background-color: rgba(255, 255, 255, 0.9);
     padding: 16px;
     border-radius: var(--radius);
@@ -167,9 +144,7 @@ h1 {
     border-radius: 8px;
 }
 
-/* ================================
-   SECTIONS
-================================ */
+/* ================================ SECTIONS ================================ */
 section {
     margin: 20px 0;
     padding: 16px;
@@ -182,9 +157,7 @@ p {
     margin-top: 10px;
 }
 
-/* ================================
-   FOOTER
-================================ */
+/* ================================ FOOTER ================================ */
 footer {
     text-align: center;
     margin-top: 30px;
@@ -205,11 +178,8 @@ footer {
     width: 30px;
 }
 
-/* ================================
-   RESPONSIVE
-================================ */
+/* ================================ RESPONSIVE ================================ */
 @media (max-width: 768px) {
-
     .header {
         flex-direction: column;
         gap: 10px;
