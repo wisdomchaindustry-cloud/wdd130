@@ -1,0 +1,228 @@
+/* ================================
+   CSS VARIABLES
+================================ */
+:root {
+    --primary-color: #0b3c49;
+    --secondary-color: #1f7a8c;
+    --accent1-color: #5fa8d3;
+    --accent2-color: #f8fafc;
+    --text-color: #1e293b;
+
+    --heading-font: 'Segoe UI', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+
+    --radius: 10px;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* ================================
+   RESET
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================================
+   BODY
+================================ */
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background-color: var(--accent2-color);
+    line-height: 1.6;
+}
+
+/* ================================
+   LAYOUT
+================================ */
+header,
+main,
+footer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+/* ================================
+   HEADER
+================================ */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.header img {
+    width: 90px;
+    border-radius: 8px;
+}
+
+/* ================================
+   NAVIGATION (UL BASED)
+================================ */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    position: relative;
+}
+
+/* Hover underline */
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--secondary-color);
+    left: 0;
+    bottom: -4px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* ================================
+   HEADINGS
+================================ */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    margin-bottom: 10px;
+
+}
+
+h1 {
+    opacity: 0.7;
+
+}
+
+/* ================================
+   HERO SECTION
+================================ */
+.hero {
+    position: relative;
+    margin: 16px 0;
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+/* Hero Image */
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Hero Title */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 14px;
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: #fff;
+    opacity: 0.9;
+}
+
+/* Hero Article */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 16px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+/* Article Image */
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 12px;
+    border-radius: 8px;
+}
+
+/* ================================
+   SECTIONS
+================================ */
+section {
+    margin: 20px 0;
+    padding: 16px;
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+p {
+    margin-top: 10px;
+}
+
+/* ================================
+   FOOTER
+================================ */
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 30px;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    .hero article {
+        position: static;
+        margin-top: 10px;
+    }
+}
