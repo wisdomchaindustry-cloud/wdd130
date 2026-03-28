@@ -66,8 +66,8 @@ footer,
 .nav-list li a {
     display: block;
     text-decoration: none;
-    color: black;
-    background-color: #e6e6e6;
+    color: var(--primary-color);
+    background-color: var(--accent2-color);
     padding: 8px 25px;
     border: 1px solid #888;
     font-size: 14px;
@@ -78,7 +78,7 @@ footer,
 }
 
 .nav-list li a:hover {
-    background-color: #d1d1d1;
+    background-color: var(--accent1-color);
 }
 
 /* ================================ HEADINGS ================================ */
@@ -113,7 +113,7 @@ h1 {
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(194, 185, 185);
+    background-color: var(--accent1-color);
     padding: 10px;
     margin: 0;
     z-index: 2;
@@ -215,14 +215,19 @@ footer {
     position: relative;
     text-align: center;
     padding: 20px;
-    background-color: #b7a9d6;
-    color: #1e293b;
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
     /* dark text */
     border-radius: 6px;
 }
 
 .footer-text {
     margin: 0;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    display: inline-block;
 }
 
 .socialmedia {
@@ -236,12 +241,15 @@ footer {
 .socialmedia img {
     width: 30px;
     margin-top: 10px;
+
 }
 
 /* ================================ TOP ================================ */
 .top {
-    background-color: #b7a9d6;
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
     padding: 30px 40px;
+    border-radius: 7px;
 }
 
 /* ================================ RESPONSIVE ================================ */
