@@ -33,7 +33,6 @@ footer,
 .top {
     max-width: 1100px;
     margin: 0 auto;
-    /* padding: 16px; */
 
 }
 
@@ -95,6 +94,7 @@ h1 {
 
 /* ================================ HERO SECTION ================================ */
 .hero {
+    position: relative;
     margin: 20px 0;
     text-align: center;
 }
@@ -106,19 +106,29 @@ h1 {
 }
 
 .hero h1 {
-    margin: 20px 0;
-    background-color: var(--accent1-color);
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: var(--accent1-color); */
+    background-color: rgb(194, 185, 185);
     padding: 10px;
+    margin: 0;
+    z-index: 2;
 }
 
 .hero-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 16px;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
+    z-index: 2;
 }
 
 .hero-content p {
@@ -218,16 +228,6 @@ footer {
         text-align: center;
     }*/
 
-    .hero h1 {
-        position: static;
-        margin-bottom: 10px;
-    }
-
-    .hero article {
-        position: static;
-        margin-top: 10px;
-    }
-
     footer {
         flex-direction: column;
         gap: 10px;
@@ -295,7 +295,7 @@ footer {
     margin: 0 auto;
     padding: 16px;
 } */
-*/ .adventures h2 {
+.adventures h2 {
     text-align: center;
 }
 
