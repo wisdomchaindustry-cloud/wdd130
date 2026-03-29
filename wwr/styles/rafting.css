@@ -37,9 +37,9 @@ footer,
 
 /* ================================ HEADER ================================ */
 .header {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    justify-content: space-between;
 }
 
 .logo {
@@ -47,6 +47,13 @@ footer,
     height: 80px;
     object-fit: cover;
     background-color: #d9d9d9;
+}
+
+/* ================================ NAVIGATION ================================ */
+.nav {
+    justify-self: end;
+    /* pushes nav to the right */
+
 }
 
 /* ================================ NAVIGATION ================================ */
