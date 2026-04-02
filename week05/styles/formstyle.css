@@ -1,0 +1,128 @@
+/* ================================
+   PAGE
+================================ */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e6e6e6;
+  margin: 0;
+}
+
+/* Center main container */
+main {
+  max-width: 720px;
+  margin: 40px auto;
+}
+
+/* Title */
+h2 {
+  text-align: center;
+  color: #1a2c8b;
+  margin-bottom: 20px;
+}
+
+/* ================================
+   FORM
+================================ */
+form {
+  background: #dcdcdc;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+/* ================================
+   FIELDSETS
+================================ */
+fieldset {
+  border: 1px solid #b5b5b5;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+legend {
+  color: #1a2c8b;
+  font-size: 18px;
+  padding: 0 10px;
+}
+
+/* ================================
+   CONTACT INFO (PERFECT ALIGNMENT)
+================================ */
+.form-item {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* ================================
+   QUESTIONS SECTION
+================================ */
+.questions .form-item {
+  grid-template-columns: 1fr auto;
+}
+
+/* Checkbox row */
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+/* Textarea block */
+.textarea {
+  display: block;
+}
+
+.textarea label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* ================================
+   INPUTS
+================================ */
+input,
+select,
+textarea {
+  padding: 6px;
+  border: 1px solid #999;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+}
+
+select {
+  width: 140px;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+}
+
+/* ================================
+   BUTTON
+================================ */
+button {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 30px;
+  background: #0d1a8a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* ================================
+   FOOTER
+================================ */
+footer {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 12px;
+}
