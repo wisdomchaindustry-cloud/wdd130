@@ -1,0 +1,115 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page background */
+body {
+  background-color: #f2f2f2;
+  padding: 30px 15px;
+}
+
+/* Container */
+.quiz-container {
+  max-width: 720px;
+  margin: 0 auto;
+  background-color: #e9e9e9;
+  padding: 25px 25px 30px;
+  border: 1px solid #cfcfcf;
+  border-radius: 6px;
+}
+
+/* Title */
+.quiz-container h1 {
+  font-size: 22px;
+  color: #1a237e;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Checkbox icon */
+.quiz-container h1::before {
+  content: "✔";
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+/* Form group spacing */
+.form-group {
+  margin-bottom: 22px;
+}
+
+/* Labels */
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Number styling */
+.number {
+  color: #1a237e;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* Inputs, textarea, select */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #bdbdbd;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+/* Textarea height look */
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+/* Code block */
+.code-block {
+  background-color: #2f2f2f;
+  color: #ffffff;
+  font-family: monospace;
+  padding: 12px;
+  margin: 10px 0 15px;
+  border-radius: 2px;
+  width: 80%;
+}
+
+/* Submit button */
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #0d0d8b;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Button hover */
+button:hover {
+  background-color: #000066;
+}

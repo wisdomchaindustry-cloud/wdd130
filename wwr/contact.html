@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Contact White Water Rafting Company for bookings, inquiries, and support."
+    />
+    <meta name="author" content="Francis Ime" />
+
+    <title>Contact Us | White Water Rafting</title>
+
+    <link rel="stylesheet" href="styles/contact.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <img src="images/icon.jpg" alt="White Water Rafting Logo" class="logo" />
+
+      <nav class="nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="trips.html">Trips</a></li>
+          <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- COMPANY INFO -->
+      <section class="company-info">
+        <h1>White Water Rafting Company</h1>
+        <p>257 Nwaniba road, Ewet Housing Uyo</p>
+        <p>Akwa Ibom State, Nigeria</p>
+        <p>+234 8066443248</p>
+        <p>wisdomgreat@whitewater.com</p>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section class="contact-section">
+        <!-- MAP -->
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63593.8168535462!2d7.952793599999999!3d5.0036736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1775239756906!5m2!1sen!2sng"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <!-- FORM -->
+        <form class="contact-form" action="#" method="post">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <fieldset class="radio-group">
+            <legend>Message Purpose</legend>
+
+            <label>
+              <input type="radio" name="purpose" value="general" required />
+              General Inquiry
+            </label>
+
+            <label>
+              <input type="radio" name="purpose" value="reservation" />
+              Reservation Question
+            </label>
+
+            <label>
+              <input type="radio" name="purpose" value="suggestion" />
+              Website Suggestion
+            </label>
+          </fieldset>
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Type your message here"
+            rows="5"
+          ></textarea>
+
+          <label class="checkbox">
+            <input type="checkbox" name="subscribe" />
+            Please subscribe me to the monthly newsletter
+          </label>
+
+          <button type="submit">Get in Touch!</button>
+        </form>
+      </section>
+
+      <!-- TEAM SECTION -->
+      <section class="team">
+        <h2>We Are Here to Serve You</h2>
+
+        <div class="team-container">
+          <div class="card">
+            <img src="images/Mary Jack.jpg" alt="Employee 1 profile" />
+            <p>Employee Profile</p>
+          </div>
+
+          <div class="card">
+            <img src="images/James Jack.jpg" alt="Employee 2 profile" />
+            <p>Employee Profile</p>
+          </div>
+
+          <div class="card">
+            <img src="images/Angela Frank.jpg" alt="Employee 3 profile" />
+            <p>Employee Profile</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p class="footer-text">© 2026 Francis Ime. We’d love to hear from you!</p>
+
+      <div class="icons">
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="images/facebook.jpg" alt="Facebook Icon" />
+        </a>
+
+        <a
+          href="https://linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="images/linkedin.jpg" alt="LinkedIn Icon" />
+        </a>
+
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="images/instagram.jpg" alt="Instagram Icon" />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

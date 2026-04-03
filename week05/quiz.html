@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic HTML and CSS Quiz</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles/quiz1.css" />
+  </head>
+
+  <body>
+    <div class="quiz-container box">
+      <h1>Basic HTML and CSS Quiz</h1>
+
+      <form>
+        <!-- Question 1 -->
+        <div class="form-group">
+          <label for="q1">
+            <span class="number">1.</span>
+            What does the acronym CSS stand for?
+          </label>
+          <input type="text" id="q1" name="q1" />
+        </div>
+
+        <!-- Question 2 -->
+        <div class="form-group">
+          <label for="q2">
+            <span class="number">2.</span>
+            How are id and class attributes selected in CSS?
+          </label>
+          <textarea id="q2" name="q2" rows="5"></textarea>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="form-group">
+          <label for="q3">
+            <span class="number">3.</span>
+            Which of the following is a valid CSS comment?
+          </label>
+          <select id="q3" name="q3">
+            <option selected disabled>Choose One ...</option>
+            <option value="wrong1">// This is a comment</option>
+            <option value="correct">/* This is a comment */</option>
+            <option value="wrong2">&lt;!-- This is a comment --&gt;</option>
+          </select>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="form-group">
+          <label for="q4">
+            <span class="number">4.</span>
+            What is the bottom margin given this declaration?
+          </label>
+
+          <!-- Code Display -->
+          <div class="code-block">margin: 10px 5px 15px;</div>
+
+          <input type="text" id="q4" name="q4" />
+        </div>
+
+        <!-- Submit -->
+        <button type="submit">Submit Quiz</button>
+      </form>
+    </div>
+  </body>
+</html>
