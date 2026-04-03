@@ -36,9 +36,8 @@ body {
 }
 
 /* =========================
-   LAYOUT UTILITIES
+   LAYOUT
 ========================= */
-/* ================================ LAYOUT ================================ */
 header,
 main,
 footer,
@@ -50,9 +49,7 @@ footer,
 header,
 footer {
   padding: var(--spacing-md) var(--spacing-xl);
-  border-width: 2px;
-  border-color: black;
-  border-style: solid;
+  border: 2px solid black;
   border-radius: 3px;
 }
 
@@ -64,7 +61,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   background: var(--color-primary);
-  padding: var(--spacing-md) var(--spacing-xl);
 }
 
 .logo {
@@ -105,21 +101,33 @@ footer {
 }
 
 /* =========================
-   CONTACT SECTION
+   CONTACT SECTION (FIXED ALIGNMENT)
 ========================= */
 .contact-section {
   display: flex;
   justify-content: center;
+  align-items: stretch; /* KEY FIX */
   gap: var(--spacing-xl);
   padding: var(--spacing-lg);
   flex-wrap: wrap;
 }
 
-/* MAP */
-.map img {
+/* MAP (NOW MATCHES FORM HEIGHT) */
+.map {
+  display: flex;
   width: 100%;
   max-width: 400px;
-  border: 1px solid var(--color-border);
+  background: white;
+  padding: var(--spacing-md);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%; /* KEY FIX */
+  min-height: 100%;
+  border: none;
   border-radius: var(--radius-sm);
 }
 
@@ -129,6 +137,10 @@ footer {
   flex-direction: column;
   width: 100%;
   max-width: 350px;
+  background: white;
+  padding: var(--spacing-md);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form label {
@@ -175,7 +187,8 @@ button {
   padding: var(--spacing-sm);
   border: none;
   border-radius: var(--radius-sm);
-  background: var(--color-secondary);
+  background: rgb(96, 96, 150);
+  color: white;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -185,34 +198,67 @@ button:focus {
   background: rgb(66, 143, 131);
 }
 
-button {
-  background: rgb(96, 96, 150);
-  color: white;
-}
-
 /* =========================
    TEAM SECTION
 ========================= */
 .team {
-  margin: var(--spacing-xl) var(--spacing-md);
-  padding: var(--spacing-lg);
-  border: 1px solid #aaa;
+  border: 2px solid #000;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 1000px;
+  background-color: #ffffff;
+  border-radius: 8px;
   text-align: center;
+}
+
+.team h2 {
+  margin-bottom: 20px;
+  color: #1a237e;
 }
 
 .team-container {
   display: flex;
   justify-content: center;
-  gap: var(--spacing-lg);
-  margin-top: var(--spacing-md);
+  gap: 20px;
   flex-wrap: wrap;
 }
 
+/* CARD */
+.card {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+  text-align: center;
+  width: 200px;
+  border: 1px solid #ddd;
+  transition: transform 0.3s ease;
+}
+
+/* IMAGE */
 .card img {
   width: 100px;
   height: 100px;
-  object-fit: cover;
   border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+/* FIGCAPTION */
+.card figcaption {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.card figcaption strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+/* HOVER */
+.card:hover {
+  transform: translateY(-5px);
 }
 
 /* =========================
@@ -228,15 +274,21 @@ button {
   text-align: center;
 }
 
-.icons {
+/* FOOTER NAV */
+.footer-nav {
   position: absolute;
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
 }
+
+.icons {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
 .icons img {
   width: 30px;
-  margin-right: var(--spacing-sm);
 }
 
 /* =========================
@@ -258,64 +310,18 @@ button {
     align-items: center;
   }
 
-  /* ================================ FOOTER ================================ */
-  .icons {
-    display: flex;
-    gap: var(--spacing-sm);
+  .map iframe {
+    height: 300px; /* prevent collapse on small screens */
   }
-}
 
-/* TEAM SECTION */
-.team {
-  border: 2px solid #000; /* REQUIRED */
-  padding: 20px;
-  margin: 30px auto;
-  max-width: 1000px;
-  background-color: #ffffff;
-  border-radius: 8px;
-}
+  .footer-nav {
+    position: static;
+    transform: none;
+    margin-top: var(--spacing-sm);
+    justify-content: center;
+  }
 
-/* SECTION TITLE */
-.team h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #1a237e;
-}
-
-/* CONTAINER FOR CARDS */
-.team-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-/* INDIVIDUAL CARD */
-.card {
-  background-color: #f9f9f9;
-  padding: 15px;
-  border-radius: 6px;
-  text-align: center;
-  width: 200px;
-  border: 1px solid #ddd;
-  transition: transform 0.3s ease;
-}
-
-/* IMAGE */
-.card img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-/* TEXT */
-.card p {
-  font-size: 14px;
-  color: #333;
-}
-
-/* HOVER EFFECT */
-.card:hover {
-  transform: translateY(-5px);
+  .icons {
+    justify-content: center;
+  }
 }

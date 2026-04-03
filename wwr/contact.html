@@ -47,10 +47,8 @@
         <!-- MAP -->
         <div class="map">
           <iframe
+            class="map-iframe"
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63593.8168535462!2d7.952793599999999!3d5.0036736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1775239756906!5m2!1sen!2sng"
-            width="600"
-            height="450"
-            style="border: 0"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -80,18 +78,34 @@
           <fieldset class="radio-group">
             <legend>Message Purpose</legend>
 
-            <label>
-              <input type="radio" name="purpose" value="general" required />
+            <label for="purpose-general">
+              <input
+                type="radio"
+                id="purpose-general"
+                name="purpose"
+                value="general"
+                required
+              />
               General Inquiry
             </label>
 
-            <label>
-              <input type="radio" name="purpose" value="reservation" />
+            <label for="purpose-reservation">
+              <input
+                type="radio"
+                id="purpose-reservation"
+                name="purpose"
+                value="reservation"
+              />
               Reservation Question
             </label>
 
-            <label>
-              <input type="radio" name="purpose" value="suggestion" />
+            <label for="purpose-suggestion">
+              <input
+                type="radio"
+                id="purpose-suggestion"
+                name="purpose"
+                value="suggestion"
+              />
               Website Suggestion
             </label>
           </fieldset>
@@ -104,8 +118,8 @@
             rows="5"
           ></textarea>
 
-          <label class="checkbox">
-            <input type="checkbox" name="subscribe" />
+          <label for="subscribe" class="checkbox">
+            <input type="checkbox" id="subscribe" name="subscribe" />
             Please subscribe me to the monthly newsletter
           </label>
 
@@ -118,20 +132,29 @@
         <h2>We Are Here to Serve You</h2>
 
         <div class="team-container">
-          <div class="card">
-            <img src="images/Mary Jack.jpg" alt="Employee 1 profile" />
-            <p>Employee Profile</p>
-          </div>
+          <figure class="card">
+            <img src="images/mary.jpg" alt="Mary - Tour Guide" />
+            <figcaption>
+              <strong>Mary Johnson</strong><br />
+              Senior Rafting Guide
+            </figcaption>
+          </figure>
 
-          <div class="card">
-            <img src="images/James Jack.jpg" alt="Employee 2 profile" />
-            <p>Employee Profile</p>
-          </div>
+          <figure class="card">
+            <img src="images/james.jpg" alt="James - Safety Officer" />
+            <figcaption>
+              <strong>James Smith</strong><br />
+              Safety Officer
+            </figcaption>
+          </figure>
 
-          <div class="card">
-            <img src="images/Angela Frank.jpg" alt="Employee 3 profile" />
-            <p>Employee Profile</p>
-          </div>
+          <figure class="card">
+            <img src="images/angela.jpg" alt="Angela - Customer Support" />
+            <figcaption>
+              <strong>Angela Brown</strong><br />
+              Customer Support Manager
+            </figcaption>
+          </figure>
         </div>
       </section>
     </main>
@@ -140,31 +163,33 @@
     <footer class="footer">
       <p class="footer-text">© 2026 Francis Ime. We’d love to hear from you!</p>
 
-      <div class="icons">
-        <a
-          href="https://facebook.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="images/facebook.jpg" alt="Facebook Icon" />
-        </a>
+      <nav class="footer-nav" aria-label="Social Media Links">
+        <div class="icons">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/facebook.jpg" alt="Facebook Icon" />
+          </a>
 
-        <a
-          href="https://linkedin.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="images/linkedin.jpg" alt="LinkedIn Icon" />
-        </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/linkedin.jpg" alt="LinkedIn Icon" />
+          </a>
 
-        <a
-          href="https://instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="images/instagram.jpg" alt="Instagram Icon" />
-        </a>
-      </div>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="images/instagram.jpg" alt="Instagram Icon" />
+          </a>
+        </div>
+      </nav>
     </footer>
   </body>
 </html>
