@@ -47,6 +47,17 @@ footer,
   justify-content: space-between;
 }
 
+/* FIX LOW CONTRAST ON DARK BACKGROUND */
+.top,
+.site-footer {
+  color: #ffffff;
+}
+
+.top a,
+.site-footer a {
+  color: #ffffff;
+}
+
 /* LOGO */
 .logo {
   width: 80px;
