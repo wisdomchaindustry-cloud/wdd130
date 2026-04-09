@@ -4,19 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- SEO Meta -->
     <meta
       name="description"
       content="Contact White Water Rafting Company for bookings, inquiries, and support."
     />
     <meta name="author" content="Francis Ime" />
 
-    <title>Contact Us | White Water Rafting</title>
+    <title>Contact Us | White Water Rafting Company</title>
 
+    <!-- ONE GLOBAL CSS FILE -->
     <link rel="stylesheet" href="styles/rafting.css" />
   </head>
 
   <body>
-    <!-- HEADER (MATCHED EXACTLY WITH ABOUT PAGE) -->
+    <!-- HEADER -->
     <div class="top">
       <header class="header">
         <img
@@ -38,15 +40,24 @@
 
     <!-- MAIN -->
     <main>
+      <!-- HERO (REQUIRED) -->
+      <div class="hero">
+        <img src="images/hero1.jpg" alt="Contact White Water Rafting" />
+        <h1>Contact White Water Rafting Company</h1>
+      </div>
+
+      <!-- COMPANY INFO -->
       <section class="company-info">
-        <h1>White Water Rafting Company</h1>
+        <h2>White Water Rafting Company</h2>
         <p>257 Nwaniba road, Ewet Housing Uyo</p>
         <p>Akwa Ibom State, Nigeria</p>
         <p>+234 8066443248</p>
         <p>wisdomgreat@whitewater.com</p>
       </section>
 
+      <!-- CONTACT SECTION -->
       <section class="contact-section">
+        <!-- MAP -->
         <div class="map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63593.8168535462!2d7.952793599999999!3d5.0036736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1775239756906!5m2!1sen!2sng"
@@ -54,7 +65,9 @@
           ></iframe>
         </div>
 
+        <!-- FORM -->
         <form class="contact-form">
+          <!-- NAME -->
           <label for="name">Name</label>
           <input
             type="text"
@@ -64,6 +77,7 @@
             required
           />
 
+          <!-- EMAIL -->
           <label for="email">Email</label>
           <input
             type="email"
@@ -73,6 +87,7 @@
             required
           />
 
+          <!-- RADIO -->
           <fieldset class="radio-group">
             <legend>Message Purpose</legend>
 
@@ -108,6 +123,7 @@
             </label>
           </fieldset>
 
+          <!-- MESSAGE -->
           <label for="message">Message</label>
           <textarea
             id="message"
@@ -116,35 +132,38 @@
             placeholder="Write your message here"
           ></textarea>
 
+          <!-- CHECKBOX -->
           <label class="checkbox" for="subscribe">
             <input type="checkbox" id="subscribe" name="subscribe" />
             Please subscribe me to the monthly newsletter
           </label>
 
+          <!-- BUTTON -->
           <button type="submit">Get in Touch!</button>
         </form>
       </section>
 
+      <!-- TEAM -->
       <section class="team">
         <h2>We Are Here to Serve You</h2>
 
         <div class="team-container">
           <figure class="card">
-            <img src="images/mary.jpg" alt="Mary" />
+            <img src="images/mary.jpg" alt="Mary Johnson" />
             <figcaption>
               <strong>Mary Johnson</strong><br />Senior Guide
             </figcaption>
           </figure>
 
           <figure class="card">
-            <img src="images/james.jpg" alt="James" />
+            <img src="images/james.jpg" alt="James Smith" />
             <figcaption>
               <strong>James Smith</strong><br />Safety Officer
             </figcaption>
           </figure>
 
           <figure class="card">
-            <img src="images/angela.jpg" alt="Angela" />
+            <img src="images/angela.jpg" alt="Angela Brown" />
             <figcaption>
               <strong>Angela Brown</strong><br />Support Manager
             </figcaption>
@@ -153,8 +172,8 @@
       </section>
     </main>
 
-    <!-- FOOTER (MATCHED EXACTLY WITH ABOUT PAGE) -->
-    <footer class="site-footer">
+    <!-- FOOTER (MATCHED EXACTLY) -->
+    <footer>
       <div class="footer-container">
         <p class="footer-text">
           © 2026 White Water Rafting Company | Francis Ime
